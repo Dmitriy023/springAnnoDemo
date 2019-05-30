@@ -16,9 +16,36 @@
          First Name:   <form:input path="firstName"/>
         <br/><br/>
         Last Name : <form:input path="lastName"/>
+                    <form:errors path="lastName" cssClass="error"/>
 
+
+
+        <%--<form:select path="country">--%>
+            <%--<form:option value="AZ" label="Azerbaijan"/>--%>
+            <%--<form:option value="RU" label="RUSSIA"/>--%>
+            <%--<form:option value="US" label="USA"/>--%>
+
+        <%--</form:select>--%>
+        <br/><br/>
+        <form:radiobutton path="favouriteLanguage" value="JAVA" label="JAVA"/>
+        <form:radiobutton path="favouriteLanguage" value="PHP" label="PHP"/>
+        <form:radiobutton path="favouriteLanguage" value="Ruby" label="RUBY"/>
+        <br/><br/>
+
+        <form:select path="country">
+            <form:options items="${student.countries}"/>
+        </form:select>
+        <br/><br/>
+
+        <form:checkbox path="operatingSystems" value="Linux" label="Linux"/>
+        <form:checkbox path="operatingSystems" value="Windows" label="Windows"/>
+        <form:checkbox path="operatingSystems" value="Mac" label="Mac"/>
+        <br/><br/>
         <input type="submit" value="Submit"/>
+
     </form:form>
 
+
 </body>
+
 </html>

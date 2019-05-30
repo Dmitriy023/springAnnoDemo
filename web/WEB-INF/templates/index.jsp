@@ -15,6 +15,9 @@
 
 <h1>Wellcome to Index Page</h1>
 <a href="/show">Click for form</a>
+<br/>
+<a href="/customer/new">Click for new Customer</a>
+<br/>
 <a href="/student/new">Click for new student</a>
 </body>
 </html>
